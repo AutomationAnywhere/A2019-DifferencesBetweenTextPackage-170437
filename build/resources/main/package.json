@@ -1,0 +1,45 @@
+{
+    "name": "Text_Diff",
+    "label": "[[label]]",
+    "description": "[[description]]",
+    "group": "com.automationanywhere",
+    "artifactName": "Text_Diff",
+    "packageVersion": "2.0.1-20200525-090719",
+    "codeVersion": "2.0.1-20200525-090719",
+    "commands": [
+        {
+            "name": "String_Diff",
+            "label": "[[StringDiff.label]]",
+            "description": "[[StringDiff.description]]",
+            "nodeLabel": "[[StringDiff.node_label]]",
+            "mainClass": "com.automationanywhere.botcommand.samples.commands.basic.DiffStringCommand",
+            "icon": "pkg.svg",
+            "returnType": "LIST",
+            "returnSubtype": "STRING",
+            "returnLabel": "[[StringDiff.return_label]]",
+            "returnRequired": true,
+            "attributes": [
+                {
+                    "name": "sourceList",
+                    "label": "[[StringDiff.firstString.label]]",
+                    "type": "LIST",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "targetList",
+                    "label": "[[StringDiff.secondString.label]]",
+                    "type": "LIST",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
